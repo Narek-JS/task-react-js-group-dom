@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    animation: comeAnim .7s;
+}
+.wrapper-title-lists{
+    max-width: 780px;
+}
+.wrapper-list{
+    margin: 10px 30px;
+    width: 90%;
+    background: #FFFFFF;
+    box-shadow: 0 0 3px #0000004d;
+    padding: 9px 30px;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    line-height: 25px;
+    transition: all 0.3s;
+}
+.wrapper-list:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 1px 3px #000000ec;
+}
+
+.title{
+    font-style: italic;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+.actve-title{
+    transform: translateY(0);
+}
+.toodo-id{
+    opacity: 0;
+    transform: translateX(70%);
+    transition: all 0.3s;
+}
+.actve-toodo-id{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@keyframes comeAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
